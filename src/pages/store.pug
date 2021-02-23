@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include ../includes/css-includes.pug
+    title Zero Waste
+body
+  include ../includes/header.pug
+  main
+    section.section.market
+      .container
+        .market-topnav
+          h2.green-title.market-topnav__green-title.green-title__arrow
+            a(href="./index.html").arrow.arrow_reversed
+            span Категории: Уход
+          .pagination
+            .pagination-item
+              a(href="./store.html") 1
+            .pagination-item
+              a(href="./store.html") 2
+            .pagination-item
+              a(href="./store.html") 3
+        .market-list
+          figure.img-item.market-list__item
+            img(src="./img/store-1.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Зубная щетка «Бамбук»
+              span.market-list__price 150 p
+          figure.img-item.market-list__item
+            img(src="./img/store-2.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Твердый шампунь «Лаванда»
+              span.market-list__price 350 р
+          figure.img-item.market-list__item
+            img(src="./img/store-3.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Дезодорант Biork «Алоэ»
+              span.market-list__price 250 р
+          figure.img-item.market-list__item
+            img(src="./img/store-4.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Ватные диски многоразовые
+              span.market-list__price 250 р
+          figure.img-item.market-list__item
+            img(src="./img/store-5.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Ушные палочки деревянные
+              span.market-list__price 100 р
+          figure.img-item.market-list__item
+            img(src="./img/store-6.png", alt="Магазин")
+            .img-item__new
+            figcaption.img-item__greencaption.market-list__greencaption
+              a(href="./product.html") Зубная нить с углем
+              span.market-list__price 200 р
+  include ../includes/footer.pug
+  include ../includes/js-includes.pug

@@ -1,0 +1,63 @@
+.ftr {
+  padding: 57px 68px 75px;
+  color: white;
+  background-color: $ftr-color;
+
+  &__inner { @include flexbox(stretch, flex-start, row); }
+
+  &-text {
+    flex-basis: 25%;
+    margin-right: 64px;
+    font-size: 1rem;
+    font-variant: small-caps;
+    letter-spacing: 0.32px;
+  }
+
+  &-menu {
+    padding: 0;
+    margin: 0 64px 0 0;
+
+    @include flexbox(center, space-between, column);
+    &__item:not(:last-child) { margin-bottom: 20px; }
+
+    &__link {
+      font-family: $main-ff;
+      font-size: 1rem;
+      font-variant: normal;
+      color: #fffefe;
+      text-decoration: none;
+      &:hover { &::after { background-color: white; } }
+    }
+  }
+
+  &-contacts {
+    margin-right: 64px;
+
+    @include flexbox(flex-start, flex-start, column);
+
+    &__title {
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      color: #fffefe;
+    }
+
+    &__item {
+      &:not(:last-child) { margin-bottom: 20px; }
+
+      @include flexbox(center, flex-start, row);
+    }
+
+    &__link { &:hover { &::after { background-color: white; } } }
+
+    .fa { margin-right: 11px; }
+  }
+
+  &-subscribe {
+    flex: 1;
+
+    &__title {
+      margin: 0 0 20px 0;
+      font-size: 1.125rem;
+    }
+  }
+}

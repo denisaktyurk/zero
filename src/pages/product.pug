@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include ../includes/css-includes.pug
+    title Zero Waste
+  body
+    include ../includes/header.pug
+    main
+      section.section.product
+        .container
+          h2.green-title.green-title__arrow
+            a(href="./store.html").arrow.arrow_reversed
+            span Категории: Уход
+          .product-item
+            figure.product-item__img
+              img(src="./img/product-item__img.png", alt="Твердый шампунь «Лаванда»")
+              .img-item__new
+            .product-item__desc
+              h3.product-item__name Твердый шампунь «Лаванда»
+              p.product-item__text Изготовленный на основе натуральных питательных масел, твёрдый шампунь Лаванда не травмирует и не пересушивает волосы. Эфирные масла целебных растений оздоровляют экосистему кожи головы, а пшеничные протеины укрепляют волосы по всей длине.
+              .dropdown
+                h4.dropdown-title Состав...
+                p.dropdown-text Натриевые соли жирных кислот кокосового, касторового, подсолнечного и виноградных косточек масел, артезианская вода, пшеничный протеин, масло таману, лимонная кислота, инулин, эфирные масла лаванды, чайного дерева, кедра атласского, кипариса и эвкалипта, экстракты шалфея, крапивы, дуба, лопуха, хвоща и чабреца, экстракт нима и мелии.
+              .dropdown
+                h4.dropdown-title Применение...
+                p.dropdown-text Тщательно смочить волосы водой. Провести несколько раз твердым шампунем по волосам для создания пены. Помассировать волосы и кожу головы. Тщательно смыть водой. При необходимости повторить процедуру.Избегайте попадания в глаза, при попадании промыть глаза водой.Не использовать при непереносимости компонентов.
+              .rating.product-item__rating(data-total-value="3")
+                .rating__item(data-item-value="5")
+                .rating__item(data-item-value="4")
+                .rating__item(data-item-value="3")
+                .rating__item(data-item-value="2")
+                .rating__item(data-item-value="1")
+              p.price.product-item__price Цена: 650р
+              a.btn_green.product-item__btn В корзину
+      section.section.reviews
+        .container
+          h2.green-title.reviews__title Ваши отзывы
+          .reviews-list
+            .reviews-item
+              img.reviews-item__img(src="./img/review-author.png", alt="Марк Кобейн")
+              .reviews-item__desc
+                h4.reviews-item__author Марк Кобейн
+                p.reviews-item__text Пользуюсь уже около месяца, перхоть практически исчезла. Пенится хорошо, мягкий. Но, видимо, после него лучше пользоваться кондиционером, так как волосы путаются, их трудно расчесать. Но блестящие, мягкие, чтобы быстрее обычного грязнились, тоже не заметила. В общем, мне понравился шампунь.
+            .reviews-item
+              img.reviews-item__img(src="./img/review-author.png", alt="Марк Кобейн")
+              .reviews-item__desc
+                h4.reviews-item__author Марк Кобейн
+                p.reviews-item__text Пользуюсь уже около месяца, перхоть практически исчезла. Пенится хорошо, мягкий. Но, видимо, после него лучше пользоваться кондиционером, так как волосы путаются, их трудно расчесать. Но блестящие, мягкие, чтобы быстрее обычного грязнились, тоже не заметила. В общем, мне понравился шампунь.
+            .reviews-item
+              img.reviews-item__img(src="./img/your-img.png", alt="Марк Кобейн")
+              .reviews-item__desc
+                h4.reviews-item__author Ваше Имя
+                form.form.reviews-item__form(action="")
+                  input.reviews-item__input(type="text" placeholder="Введите отзыв...")
+                  button.arrow
+    include ../includes/footer.pug
+    include ../includes/js-includes.pug
+    

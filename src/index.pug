@@ -1,0 +1,77 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include includes/css-includes.pug
+    title Zero Waste
+  body
+    include includes/header.pug
+    main
+      section.section.newcoming
+        .container
+          .greenflex.newcoming__greenflex
+            .greenflex-intro.newcoming__intro
+              h3.greenflex__title Новинки
+              .greenflex-article.newcoming-article
+                h4.greenflex-article__title.newcoming-article__title Букеты из сухоцветов
+                p.greenflex-article__text.newcoming-article__text Здесь небольшой текст про новинку, которая появилась на сайте. Также перечисление некоторых цветов из асортимента.
+                a.btn(href="./store.html") В магазин
+            img.greenflex__img.newcoming__img(src="./img/main-img.png", alt="Букеты из сухоцветов")
+      section.section.store#store
+        .container
+          h2.section-title Магазин
+          .slider
+            figure.img-item.slider__item
+              img(src="./img/market-img1.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Уход
+            figure.img-item.slider__item
+              img(src="./img/market-img2.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Сумки
+            figure.img-item.slider__item
+              img(src="./img/market-img3.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Продукты
+            figure.img-item.slider__item
+              img(src="./img/market-img1.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Уход
+            figure.img-item.slider__item
+              img(src="./img/market-img2.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Сумки
+            figure.img-item.slider__item
+              img(src="./img/market-img3.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="./store.html") Продукты
+      section.section.articles#articles
+        .container
+          h2.section-title.articles__title Статьи
+          .greenflex.articles__flex
+            img.greenflex__img.articles__img(src="./img/articles-img.png", alt="С чего начать?")
+            .greenflex-intro.articles__intro
+              h3.greenflex__title С чего начать?
+              .greenflex-article
+                h4.greenflex-article__title.newcoming-article__title Zero Waste – это философия жизни с минимальным производством отходом, если дословно – «ноль отходов».
+                p.greenflex-article__text.articles__text Zero Waste – это философия жизни с минимальным производством отходом, если дословно – «ноль отходов». Это более популярное на Западе течение, которое уверенно проникает и в наш мир. Как именно это работает, и почему важно уже сейчас стать частью этого процесса? Давайте разбираться.
+                a.btn(href="#") В блог
+      section.section.addresses#addresses
+        .container
+          h2.section-title Адреса
+          .addresses-list
+            figure.img-item.addresses-list__img-item
+              img(src="./img/addresses-img1.png", alt="Магазин")
+              figcaption.img-item__greencaption
+                a(href="") Москва
+            figure.img-item.addresses-list__img-item
+              img(src="./img/addresses-img2.png", alt="Уход")
+              figcaption.img-item__greencaption
+                a(href="") Санкт-Петербург
+            figure.img-item.addresses-list__img-item
+              img(src="./img/addresses-img3.png", alt="Сумки")
+              figcaption.img-item__greencaption
+                a(href="") Казань     
+          a.link.addresses__link(href="#") Выбрать другой город...
+    include includes/footer.pug
+    include includes/js-includes.pug

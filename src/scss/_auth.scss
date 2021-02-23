@@ -1,0 +1,50 @@
+.auth {
+  padding-bottom: 75px;
+
+  &-inner {
+    padding: 0 15px;
+
+    @include flexbox(stretch, center, column);
+  }
+
+  &-signin { margin-bottom: 40px; }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 1.875rem;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    letter-spacing: 0.6px;
+  }
+
+  &-form {
+    @include flexbox(stretch, flex-start, column);
+
+    &__input {
+      padding: 15px 30px;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-bottom: 25px;
+      font-size: 14px;
+      font-weight: 400;
+      font-variant: small-caps;
+      color: #4d4d4d;
+      text-align: center;
+      letter-spacing: 0.28px;
+
+      &:hover { &::after { background-color: #4d4d4d; } }
+    }
+
+    &__btn {
+      align-self: center;
+      padding: 14px 59px;
+    }
+  }
+
+  &__nothave { text-align: center; }
+  &__link { color: $green; }
+}

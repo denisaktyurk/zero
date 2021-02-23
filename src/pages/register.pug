@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include ../includes/css-includes.pug
+    title Zero Waste
+body
+  include ../includes/header.pug
+  main
+    section.section.register
+      .container
+        .register__inner
+          figure.register__img
+            img(src="./img/def-photo.png", alt="")
+          form.register-form(id="register-form" name="registerform")
+            .register-form__row
+              label(for="user-name") Имя:
+              input(type="text" name="user-name" value="" required)
+            .register-form__row
+              label(for="user-surname") Фамилия:
+              input(type="text" name="user-surname" value="" required)
+            .register-form__row
+              label(for="user-phone") Телефон:
+              input(type="phone" name="user-phone" value="" required)    
+            .register-form__row
+              label(for="user-mail") Почта:
+              input(type="email" name="user-mail" value="" required)
+            .register-form__row
+              label(for="user-address") Адрес:
+              input(type="text" name="user-address" value="")
+            .register-form__row
+              label(for="user-password") Пароль:
+              input(type="password" name="user-password" value="" required)
+            .register-form__row
+              label(for="user-password") Повторите пароль:
+              input(type="password" name="user-password" value="" required)
+            button.btn_green.register-form__btn Регистрация
+          .register-socials
+            include ../includes/socialauth.pug
+  include ../includes/footer.pug
+  include ../includes/js-includes.pug

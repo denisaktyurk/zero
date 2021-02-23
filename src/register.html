@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/slick.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Zero Waste</title>
+  </head>
+</html>
+<body>
+  <header class="hdr">
+    <div class="container">
+      <nav class="hdr__nav">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="./index.html#store">Магазин</a></li>
+          <li class="menu__item"><a class="menu__link" href="./index.html#articles">Статьи</a></li>
+          <li class="menu__item"><a class="menu__link" href="./index.html#addresses">Адреса</a></li>
+          <li class="menu__logo"><a class="logo__link" href="../index.html">Zero</a></li>
+          <li class="menu__item"><a class="menu__link" href="./index.html#contacts">Контакты</a></li>
+          <li class="menu__item"><a class="menu__link" href="./auth.html">Аккаунт</a></li>
+          <li class="menu__item"><a class="menu__link" href="./cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section register">
+      <div class="container">
+        <div class="register__inner">
+          <figure class="register__img"><img src="./img/def-photo.png" alt=""></figure>
+          <form class="register-form" id="register-form" name="registerform">
+            <div class="register-form__row">
+              <label for="user-name">Имя:</label>
+              <input type="text" name="user-name" value="" required>
+            </div>
+            <div class="register-form__row">
+              <label for="user-surname">Фамилия:</label>
+              <input type="text" name="user-surname" value="" required>
+            </div>
+            <div class="register-form__row">
+              <label for="user-phone">Телефон:</label>
+              <input type="phone" name="user-phone" value="" required>
+            </div>
+            <div class="register-form__row">
+              <label for="user-mail">Почта:</label>
+              <input type="email" name="user-mail" value="" required>
+            </div>
+            <div class="register-form__row">
+              <label for="user-address">Адрес:</label>
+              <input type="text" name="user-address" value="">
+            </div>
+            <div class="register-form__row">
+              <label for="user-password">Пароль:</label>
+              <input type="password" name="user-password" value="" required>
+            </div>
+            <div class="register-form__row">
+              <label for="user-password">Повторите пароль:</label>
+              <input type="password" name="user-password" value="" required>
+            </div>
+            <button class="btn_green register-form__btn">Регистрация</button>
+          </form>
+          <div class="register-socials">
+            <div class="green-divider"></div>
+            <div class="socialauth">
+              <h2 class="section-title socialauth__title">Или войдите с помощью другого аккаунта</h2>
+              <div class="socialauth-list">
+                <div class="socialauth__item"></div>
+                <div class="socialauth__item"></div>
+                <div class="socialauth__item"></div>
+                <div class="socialauth__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr__inner">
+        <p class="ftr-text">Многие товары мы производим в России сами. Мы стараемся сократить воздействие на природу на всех этапах работы нашего интернет-магазина. Поэтому при упаковке заказов мы не используем пластик, заменяя его в первую очередь на бумагу, произведенную из макулатуры.</p>
+        <ul class="ftr-menu">
+          <li class="ftr-menu__item"><a class="link ftr-menu__link" href="./index.html#store">Магазин</a></li>
+          <li class="ftr-menu__item"><a class="link ftr-menu__link" href="./auth.html">Аккаунт</a></li>
+          <li class="ftr-menu__item"><a class="link ftr-menu__link" href="./cart.html">Корзина</a></li>
+          <li class="ftr-menu__item"><a class="link ftr-menu__link" href="./index.html#articles">Статьи</a></li>
+          <li class="ftr-menu__item"><a class="link ftr-menu__link" href="./index.html#addresses">Адреса</a></li>
+        </ul>
+        <div class="ftr-contacts" id="contacts">
+          <h5 class="ftr-contacts__title">Контакты:</h5>
+          <div class="ftr-contacts__item"><i class="fa fa-instagram" aria-hidden="true"></i><a class="link ftr-contacts__link" href="#">ZeroShop</a></div>
+          <div class="ftr-contacts__item"><i class="fa fa-whatsapp" aria-hidden="true"></i><a class="link ftr-contacts__link" href="#">+7(999)342-56-78</a></div>
+          <div class="ftr-contacts__item"><i class="fa fa-facebook" aria-hidden="true"></i><a class="link ftr-contacts__link" href="#">ZeroShop</a></div>
+        </div>
+        <div class="ftr-subscribe">
+          <h5 class="ftr-subscribe__title">Оформить подписку:</h5>
+          <form class="form">
+            <input type="text" placeholder="Выведите свой E-mail:">
+            <button class="arrow"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/common.js"></script>
+</body>

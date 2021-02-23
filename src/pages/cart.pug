@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include ../includes/css-includes.pug
+    title Zero Waste
+  body
+    include ../includes/header.pug
+    main
+      section.section.cart
+        .container
+          .cart-top
+            p.cart-total Итого: 500 р
+            a.btn.cart-complete__btn Оформить заказ
+          .cart-list
+            .cart-item
+              figure.img-item.cart__img-item
+                img(src="./img/store-1.png", alt="")
+                figcaption.img-item__greencaption.market-list__greencaption
+                  a(href="#") Зубная щетка "Бамбук"
+                  span.market-list__price 350 р
+              a.cart-item__delete(href="#")
+                img.icon.icon-trash(src="./img/icons/trash.svg", alt="")
+            .cart-item
+              figure.img-item.cart__img-item
+                img(src="./img/store-2.png", alt="")
+                figcaption.img-item__greencaption.market-list__greencaption
+                  a(href="#") Ватные диски многоразовые
+                  span.market-list__price 250 р
+              a.cart-item__delete(href="#")
+                img.icon.icon-trash(src="./img/icons/trash.svg", alt="")
+            .cart-item
+              figure.img-item.cart__img-item
+                img(src="./img/store-3.png", alt="")
+                figcaption.img-item__greencaption.market-list__greencaption
+                  a(href="#") Ушные палочки деревянные
+                  span.market-list__price 100 р
+              a.cart-item__delete(href="#")
+                img.icon.icon-trash(src="./img/icons/trash.svg", alt="")
+    include ../includes/footer.pug
+    include ../includes/js-includes.pug

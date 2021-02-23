@@ -1,0 +1,170 @@
+:root {
+  font-size: 1em;
+}
+
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'common';
+@import 'header';
+
+.greenflex {
+  position: relative;
+  padding: 0 65px;
+
+  @include flexbox(center, flex-start, row);
+
+  color: white;
+  background-color: $green;
+
+  &-intro { max-width: 420px; }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: $sec-ff;
+    font-size: 2.1875rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+  }
+
+  &__img { position: relative; }
+
+  &-article {
+    color: white;
+
+    &__title {
+      margin: 0 0 19px 0;
+      font-size: 1.25rem;
+      color: #fefefe;
+
+      &::after {
+        display: block;
+        max-width: 262px;
+        height: 1px;
+        margin-top: 10px;
+        content: '';
+        background-color: #fff;
+      }
+    }
+
+    &__text {
+      margin-bottom: 25px;
+      font-size: 0.875rem;
+      color: #fff;
+    }
+  }
+}
+
+.newcoming {
+  margin-bottom: 171px;
+  &__intro { margin-right: 67px; }
+
+  &__img {
+    top: 47px;
+    max-width: 518px;
+  }
+}
+
+.img-item {
+  position: relative;
+  max-width: 360px;
+
+  &__greencaption {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    left: 0;
+    z-index: 2;
+    max-width: 165px;
+    padding: 15px 0;
+    margin: auto;
+    background-color: $green;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.21);
+
+    & a {
+      display: block;
+      font-family: $main-ff;
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #fffefe;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  &__price { font-weight: 700; }
+}
+
+.store { margin-bottom: 232px; }
+
+.slick {
+  &-list {
+    padding-bottom: 15px;
+    margin-bottom: 61px;
+  }
+
+  &-dots {
+    @include flexbox(center, center, row);
+    & > * + * { margin-left: 11px; }
+
+    & button {
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      text-indent: 2rem;
+      background-color: #658152;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+    }
+
+    .slick-active { & button { background-color: $green; } }
+  }
+}
+
+.articles {
+  margin-bottom: 146px;
+  &__title { margin-bottom: 114px; }
+
+  &__img {
+    bottom: 48px;
+    max-width: 360px;
+    margin-right: 44px;
+  }
+  &__text { font-size: 16px; }
+  &__intro { max-width: 550px; }
+}
+
+.addresses {
+  margin-bottom: 180px;
+
+  &-list {
+    padding-bottom: 15px;
+
+    @include flexbox(center, center, row);
+
+    margin-bottom: 50px;
+    &__img-item:not(:last-child) { margin-right: 15px; }
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-variant: small-caps;
+    color: #4d4d4d;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0.28px;
+  }
+}
+
+@import 'store';
+@import 'product';
+@import 'auth';
+@import 'register';
+@import 'cart';
+@import 'footer';

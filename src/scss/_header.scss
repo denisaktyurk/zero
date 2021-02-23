@@ -1,0 +1,39 @@
+.hdr { padding: 45px 0; }
+
+.menu {
+  @include flexbox(center, space-between, row);
+
+  &__link {
+    position: relative;
+    font-size: 1.25rem;
+    color: $menu-link-col;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+
+    &:hover {
+      &::after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $green;
+      }
+    }
+  }
+
+  &__logo {
+    padding-left: 25px;
+  }
+}
+
+.logo__link {
+  font-family: $sec-ff;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: $menu-link-col;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}

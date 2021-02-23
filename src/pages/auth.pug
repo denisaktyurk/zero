@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    include ../includes/css-includes.pug
+    title Zero Waste
+  body
+    include ../includes/header.pug
+    main
+      section.section.auth
+        .container
+          .auth-inner
+            .auth-signin
+              h2.section-title.auth__title Вход
+              form.auth-form
+                input.auth-form__input(type="text" placeholder="E-mail или тел.:")
+                input.auth-form__input(type="text" placeholder="Пароль:")
+                a.link.auth-form__link(href="#forgot-password") Забыли пароль?
+                button.btn_green.auth-form__btn Войти
+            include ../includes/socialauth.pug
+            p.auth__nothave Еще нет аккаунта? 
+              a.link.auth__link(href="./register.html") Зарегистрируйтесь
+    include ../includes/footer.pug
+    include ../includes/js-includes.pug

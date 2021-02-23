@@ -1,0 +1,131 @@
+.product {
+  margin-bottom: 50px;
+
+  &-item {
+    @include flexbox(flex-start, flex-start, row);
+
+    &__img {
+      position: relative;
+      margin-right: 50px;
+      img { max-width: 458px; }
+    }
+
+    &__desc {
+      max-width: 520px;
+
+      @include flexbox(flex-start, center, column);
+    }
+
+    &__name {
+      position: relative;
+      margin-bottom: 37px;
+      font-size: 1.875rem;
+      font-weight: 700;
+      font-variant: small-caps;
+      letter-spacing: 0.6px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        content: '';
+        background-color: #000;
+      }
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      font-size: 1.125rem;
+      font-variant: small-caps;
+    }
+    &__rating { margin-bottom: 20px; }
+    &__price { margin-bottom: 15px; }
+    &__btn { padding: 15px 38px; }
+  }
+}
+
+.dropdown {
+  margin-bottom: 9px;
+
+  &-title {
+    display: inline-block;
+    padding: 3px 7px 4px 9px;
+    font-variant: small-caps;
+    color: #393939;
+    letter-spacing: 0.32px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: $green;
+    }
+  }
+
+  &-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    font-variant: small-caps;
+    color: #393939;
+    letter-spacing: 0.28px;
+  }
+}
+
+.price {
+  font-family: $sec-ff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  color: #000;
+  letter-spacing: 0.2px;
+}
+
+.reviews {
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    @include flexbox(center, center, column);
+  }
+
+  &-item {
+    @include flexbox(center, flex-start, row);
+
+    &:not(:last-child) { margin-bottom: 40px; }
+
+    &__img {
+      max-width: 83px;
+      height: 83px;
+      margin-right: 32px;
+    }
+
+    &__author {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-family: $sec-ff;
+      font-size: 1rem;
+      font-weight: 700;
+      font-variant: small-caps;
+      letter-spacing: 0.32px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        content: '';
+        background-color: #000;
+      }
+    }
+
+    &:last-child {
+      width: 100%;
+      .reviews-item__desc { flex: 1; }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.market {
+  padding-bottom: 80px;
+
+  &-topnav {
+    margin-bottom: 55px;
+
+    @include flexbox(stretch, space-between, row);
+
+    &__green-title {
+      margin-bottom: 0;
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px 33px;
+
+    &__greencaption {
+      max-width: 280px;
+      padding: 9px 0 8px;
+      font-size: 18px;
+      color: #fffefe;
+      text-align: center;
+    }
+
+    & a { margin-bottom: 3px; }
+
+    &__price {
+      font-weight: 700;
+    }
+  }
+}
+
+.pagination {
+  @include flexbox(center, flex-start, row);
+
+  flex-wrap: wrap;
+
+  &-item {
+    padding: 0 6px;
+    cursor: pointer;
+    background-color: $light-green;
+    &:hover { background-color: $green; }
+    &:not(:last-child) { margin-right: 11px; }
+
+    & a {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.4px;
+    }
+  }
+}
